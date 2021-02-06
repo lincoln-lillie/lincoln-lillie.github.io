@@ -33,10 +33,11 @@ let timer = setInterval(function() {
   let minutes = Math.floor((((d%604800000)%86400000)%3600000)/60000)
   let seconds = Math.floor(((((d%604800000)%86400000)%3600000)%60000)/1000)
   e.innerHTML = "💖 "
-    + weeks + "w "
-    + days + "d "
-    + hours + "h "
-    + minutes + "m " + seconds + "s "
+    + weeks + " week(s) "
+    + days + " days(s) "
+    + hours + " hour(s) "
+    + minutes + " minute(s) and "
+    + seconds + " second(s) "
     + " since the happiest moment of my life"
 }, 1000)
 </script>
