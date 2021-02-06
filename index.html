@@ -32,12 +32,12 @@ let timer = setInterval(function() {
   let hours = Math.floor(((d%604800000)%86400000)/3600000)
   let minutes = Math.floor((((d%604800000)%86400000)%3600000)/60000)
   let seconds = Math.floor(((((d%604800000)%86400000)%3600000)%60000)/1000)
-  e.innerHTML = "💖 "
+  e.innerHTML = "💖\n"
     + weeks + " weeks "
     + days + " days "
     + hours + " hours "
     + minutes + " minutes and "
     + seconds + " seconds "
-    + " since the happiest moment of my life. 💕"
+    + " since the happiest moment of my life. \n💕"
 }, 1000)
 </script>
