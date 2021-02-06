@@ -18,7 +18,7 @@ body {
 }
 </style>
 <div id="container">
-  <p id="countdown"></p>
+  <div id="countdown"></div>
 </div>
 <script>
 // Create a timer that updates every second
@@ -32,12 +32,12 @@ let timer = setInterval(function() {
   let hours = Math.floor(((d%604800000)%86400000)/3600000)
   let minutes = Math.floor((((d%604800000)%86400000)%3600000)/60000)
   let seconds = Math.floor(((((d%604800000)%86400000)%3600000)%60000)/1000)
-  e.innerHTML = "💖<br>
+  e.innerHTML = "💖 
     + weeks + " weeks "
     + days + " days "
     + hours + " hours "
     + minutes + " minutes and "
     + seconds + " seconds "
-    + " since the happiest moment of my life. <br>💕"
+    + " since the happiest moment of my life. 💕"
 }, 1000)
 </script>
